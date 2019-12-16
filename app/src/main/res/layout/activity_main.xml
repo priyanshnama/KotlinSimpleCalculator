@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="177dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/number_2"
         android:inputType="number"
@@ -18,14 +19,13 @@
         app:layout_constraintEnd_toEndOf="@+id/number1"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/number1"
-        app:layout_constraintTop_toBottomOf="@+id/number1"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/number1" />
 
     <Button
         android:id="@+id/add"
         android:layout_width="53dp"
         android:layout_height="53dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="80dp"
         android:onClick="add"
         android:text="@string/add"
@@ -91,5 +91,12 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/number2"
         app:layout_constraintTop_toBottomOf="@+id/number2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="240dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
