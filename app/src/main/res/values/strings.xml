@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">KotlinSimpleCalculator</string>
+    <string name="app_name" translatable="false">KotlinSimpleCalculator</string>
+    <string name="subtract">-</string>
+    <string name="divide">/</string>
+    <string name="number_2">Number 2</string>
+    <string name="add">+</string>
+    <string name="number_1">Number 1</string>
+    <string name="result">result</string>
+    <string name="multiply">X</string>
 </resources>
