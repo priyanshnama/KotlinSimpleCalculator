@@ -16,19 +16,16 @@ class MainActivity : AppCompatActivity() {
     fun add(view: View){
 
         val str1 = number1.text.toString()
+        val str2 = number2.text.toString()
+
         val num1:Double
+        val num2:Double
+
         try {
             num1 = str1.toDouble()
-        } catch (e: NumberFormatException) {
-            textView.text = "Enter something valid"
-            return
-        }
-
-        val str2 = number2.text.toString()
-        val num2:Double
-        try {
             num2 = str2.toDouble()
-        } catch (e: NumberFormatException) {
+        }
+        catch (e: NumberFormatException) {
             textView.text = "Enter something valid"
             return
         }
@@ -41,44 +38,38 @@ class MainActivity : AppCompatActivity() {
     fun subtract(view: View){
 
         val str1 = number1.text.toString()
+        val str2 = number2.text.toString()
+
         val num1:Double
+        val num2:Double
+
         try {
             num1 = str1.toDouble()
-        } catch (e: NumberFormatException) {
-            textView.text = "Enter something valid"
-            return
-        }
-
-        val str2 = number2.text.toString()
-        val num2:Double
-        try {
             num2 = str2.toDouble()
-        } catch (e: NumberFormatException) {
+        }
+        catch (e: NumberFormatException) {
             textView.text = "Enter something valid"
             return
         }
 
         val result = num1 - num2
         println("$num1 - $num2 = $result")
-        textView.text = "" + result
+        textView.text = "%.2f".format(result)
     }
 
     fun multiply(view: View){
 
         val str1 = number1.text.toString()
+        val str2 = number2.text.toString()
+
         val num1:Double
+        val num2:Double
+
         try {
             num1 = str1.toDouble()
-        } catch (e: NumberFormatException) {
-            textView.text = "Enter something valid"
-            return
-        }
-
-        val str2 = number2.text.toString()
-        val num2:Double
-        try {
             num2 = str2.toDouble()
-        } catch (e: NumberFormatException) {
+        }
+        catch (e: NumberFormatException) {
             textView.text = "Enter something valid"
             return
         }
@@ -91,19 +82,16 @@ class MainActivity : AppCompatActivity() {
     fun divide(view: View){
 
         val str1 = number1.text.toString()
+        val str2 = number2.text.toString()
+
         val num1:Double
+        val num2:Double
+
         try {
             num1 = str1.toDouble()
-        } catch (e: NumberFormatException) {
-            textView.text = "Enter something valid"
-            return
-        }
-
-        val str2 = number2.text.toString()
-        val num2:Double
-        try {
             num2 = str2.toDouble()
-        } catch (e: NumberFormatException) {
+        }
+        catch (e: NumberFormatException) {
             textView.text = "Enter something valid"
             return
         }
