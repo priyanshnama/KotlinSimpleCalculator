@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
         val result = num1 - num2
         println("$num1 - $num2 = $result")
-        textView.text = "%.2f".format(result)
+        textView.text = "" + result
     }
 
     fun multiply(view: View){
