@@ -6,18 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
     <EditText
         android:id="@+id/number2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="178dp"
+        android:layout_marginTop="88dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/number_2"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
         app:layout_constraintEnd_toEndOf="@+id/number1"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/number1"
         app:layout_constraintTop_toBottomOf="@+id/number1" />
 
@@ -25,11 +37,12 @@
         android:id="@+id/add"
         android:layout_width="54dp"
         android:layout_height="54dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="12dp"
         android:onClick="add"
         android:text="@string/add"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/left"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number1" />
 
@@ -63,15 +76,15 @@
         android:id="@+id/number1"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="76dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/number_1"
         android:inputType="numberDecimal"
         android:textAlignment="textEnd"
         app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/left"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/adView" />
 
     <Button
         android:id="@+id/multiply"
@@ -90,7 +103,7 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="16dp"
         android:text="@string/result"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/number2"

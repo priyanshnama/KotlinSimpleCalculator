@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "712786998690",
+    "firebase_url": "https://kotlinsimplecalculator.firebaseio.com",
+    "project_id": "kotlinsimplecalculator",
+    "storage_bucket": "kotlinsimplecalculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712786998690:android:6f2ae7a2ca3b97c2d26efb",
+        "android_client_info": {
+          "package_name": "com.priyanshnama.kotlinsimplecalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712786998690-bfooilnhpb3lt4u5nuulsrf2ggkeqhgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZx5cTx0n3IW5H9eZulw4TT2fTeBpoIec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712786998690-bfooilnhpb3lt4u5nuulsrf2ggkeqhgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
